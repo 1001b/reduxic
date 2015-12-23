@@ -1,0 +1,62 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "globals": {
+    "expect": true,
+    "sinon": true,
+    "__DEV__": true
+  },
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": false,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": false,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "jsx": true
+  },
+  "rules": {
+    "no-unused-vars": [2, {"vars": "local", "args": "none"}],
+    "react/jsx-uses-vars": 2,
+    "brace-style": [2, "stroustrup", { "allowSingleLine": true }],
+    "consistent-return": 0,
+    "curly": 2,
+    "eqeqeq": 2,
+    "indent": [2, 2, { "SwitchCase": 1 }],
+    "key-spacing": [2, {
+      "beforeColon": false,
+      "afterColon": true
+    }],
+    "no-multiple-empty-lines": 2,
+    "no-throw-literal": 2,
+    "no-underscore-dangle": 0,
+    "no-use-before-define": [2, "nofunc"],
+    "quote-props": [2, "as-needed"],
+    "quotes": [2, "single"],
+    "radix": 2,
+    "space-after-keywords": [2, "always"],
+    "space-in-parens": [2, "never"],
+    "space-unary-ops": [2, {
+      "words": true,
+      "nonwords": false
+    }],
+    "strict": [2, "never"],
+    "wrap-iife": [2, "inside"],
+    "semi": [2, "always"]
+  },
+  "plugins": [
+    "react"
+  ]
+}
