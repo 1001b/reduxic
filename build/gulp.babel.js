@@ -25,7 +25,7 @@ gulp.task('lint', ()=> {
     ,[
         '-c'
         , conf('.eslintrc')
-        //could use eslintignore,
+        //could use eslintignore or --ignorePattern,
         //but cleaner to tell eslint what to process
         ,srcJs
         ,testJs
