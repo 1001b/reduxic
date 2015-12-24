@@ -7,6 +7,7 @@ import chai from 'chai';
 import chaiImmutable from 'chai-immutable';
 
 
+//TODO may use jasmine for JSX testing as it has support for React
 const doc = jsdom.jsdom('<!doctype html><html><body></body></html>');
 const win = doc.defaultView;
 
