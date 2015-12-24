@@ -6,8 +6,13 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js 'test/**/*.@(js|jsx)'"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "redux",
+    "react",
+    "eslint",
+    "immutable"
+  ],
+  "author": "Jeffrey Law",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
@@ -25,8 +30,10 @@
     "gulp": "^3.9.0",
     "gulp-eslint": "^1.1.1",
     "gulp-exec": "^2.1.2",
-    "jscs": "^2.7.0",
+    "istanbul": "^0.4.1",
     "jsdom": "^7.2.0",
+    "karma": "^0.13.15",
+    "karma-mocha": "^0.2.1",
     "mocha": "^2.3.4",
     "react-addons-test-utils": "^0.14.3",
     "react-hot-loader": "^1.3.0",
