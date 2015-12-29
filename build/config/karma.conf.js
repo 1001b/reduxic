@@ -15,9 +15,10 @@ module.exports = function (config) {
       './tests.webpack.js'
   ],
     preprocessors: {
-      './tests.webpack.js' : ['webpack','coverage']
+      './tests.webpack.js' : CI ? ['webpack'] : ['webpack','coverage']
     },
-    reporters: ['dots','coverage'],
+    //coverage is not needed in CI and coverage causes an error in travis
+    reporters: CI ? ['dots'] : ['dots','coverage'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_WARN, // possible values: config.LOG_DISABLE ||
