@@ -1,6 +1,6 @@
 import React from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
-import Winner from './Winner';
+import Winner from './Winner.jsx';
 import {connect} from 'react-redux';
 import {w,v,p,t} from '../constants';
 import * as actionCreators from '../action_creators';

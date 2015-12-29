@@ -7,16 +7,16 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
-    './src/index'
+    './src/client/index.jsx'
 
   ],
   debug: true,
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
   module: {
     loaders: [{
       test: /\.jsx?$/,
       exclude: /node_modules/,
-      loader: 'react-hot!babel'
+      loader: 'react-hot!babel-loader'
     }, {
       test: /\.css$/,
       loader: 'style!css!autoprefixer?browsers=last 2 versions'
@@ -26,7 +26,7 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   output: {
-    path: __dirname + '/dist',
+    path: __dirname + './dist/',
     publicPath: '/',
     filename: 'bundle.js'
   },

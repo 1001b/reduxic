@@ -12,7 +12,7 @@ export function setState(state) {
 }
 
 export function vote(entry) {
-  return {
+  return { /*action_creator*/
     type: v.toUpperCase(),
     entry
   };
